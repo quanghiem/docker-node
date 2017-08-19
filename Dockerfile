@@ -14,4 +14,5 @@ ADD . .
 RUN npm run postinstall
 
 # Start app
-CMD [ "npm", "start" ]
+ENTRYPOINT ["npm"]
+CMD ["start"]
