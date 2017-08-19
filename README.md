@@ -16,7 +16,7 @@ For docker compose run
 ```
 docker-compose up
 ```
-Add the flag `-d` to run the container in the background. To restart the stoped do not use `docker run ...`. This will create another container. You can restart the container by using `docker start api`.
+Add the flag `-d` to run the container in the background. Do not use `docker run ...` to restart a stopped container. This will create another new container. You can restart the container by using `docker start api`.
 
 ## Run another npm script instead of "start"
 To run another npm script instead of start you can use the following command
