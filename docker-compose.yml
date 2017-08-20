@@ -5,7 +5,7 @@ services:
     build: .
     environment:
       - NODE_ENV=development
-    command: npm run debug
+    entrypoint: npm run debug
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules
