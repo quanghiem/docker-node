@@ -1,7 +1,7 @@
 # Docker environment for NodeJS and TypeScript
 This repository contains a Docker environment to develop NodeJS and TypeScript.
 
-The container installs all dependencies and runs the application with [nodemon](https://www.npmjs.com/package/nodemon). When changes are made in the `dist` folder the application restarts automaticly.
+The container installs all dependencies and runs the application in debug with [nodemon](https://www.npmjs.com/package/nodemon). When changes are made in the `dist` folder the application restarts automaticly.
 
 ## Start the container
 Run the following commands to start the container and the Node application:
@@ -12,7 +12,7 @@ docker build -t server .
 docker run --name api -p 80:80 server
 ```
 
-For docker compose run
+Use Docker Compose to start a container that allow debugging:
 ```
 docker-compose up
 ```
